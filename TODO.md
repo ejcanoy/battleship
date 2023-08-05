@@ -1,0 +1,19 @@
+- [] set up dev dependencies
+    - [] jest
+    - [] babel 
+    - [] webpack
+    - [] prettier 
+    - [] ESLint
+- [] plan ship factory function
+- [] generate tests for ship factory function
+- [] code and refactor ship factory function
+- [] plan gameboard factory
+- [] generate tests for gameboard
+- [] code and refactor gameboard
+- [] plan player factory function
+- [] create genrate tests for player factory
+- [] code and refactory player factory
+- [] plan main game loop -> module
+- [] code main game loop
+- [] allow users to place ship
+- [] get the AI to hit adjacent hits
