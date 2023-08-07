@@ -1,11 +1,11 @@
 - [] set up dev dependencies
-  - [] jest
+  - [x] jest
   - [x] webpack
-  - [] prettier
-  - [] ESLint
-- [] plan ship factory function
-- [] generate tests for ship factory function
-- [] code and refactor ship factory function
+  - [x] prettier
+  - [x] ESLint
+- [x] plan ship factory function
+- [x] generate tests for ship factory function
+- [x] code and refactor ship factory function
 - [] plan gameboard factory
 - [] generate tests for gameboard
 - [] code and refactor gameboard
