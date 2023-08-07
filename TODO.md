@@ -1,9 +1,8 @@
 - [] set up dev dependencies
-    - [] jest
-    - [] babel 
-    - [] webpack
-    - [] prettier 
-    - [] ESLint
+  - [] jest
+  - [x] webpack
+  - [] prettier
+  - [] ESLint
 - [] plan ship factory function
 - [] generate tests for ship factory function
 - [] code and refactor ship factory function
