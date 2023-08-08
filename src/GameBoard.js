@@ -69,11 +69,8 @@ const GameBoard = () => {
         return true;
     }
 
-
-    // getShips
     const getShips = () => _ships
 
-    // areAllShipsSunk
     const areAllShipsSunk = () => {
         for (let i = 0; i < _ships.length; i++) {
             if (!_ships[i].isSunk()) {
