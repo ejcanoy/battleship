@@ -1,22 +1,21 @@
 /* eslint-disable no-underscore-dangle */
-// ship
-const ship = (length) => {
+const Ship = (length) => {
     const _length = length;
-    let _numHits = 0;
+    let _hits = 0;
 
-    const isSunk = () => _numHits === _length;
+    const isSunk = () => _hits === _length;
 
     const hit = () => {
-        _numHits += 1;
+        _hits += 1;
     }
 
-    const getNumHits = () => _numHits;
+    const getHits = () => _hits;
 
     const getLength = () => _length;
 
-    return { isSunk, hit, getNumHits, getLength };
+    return { isSunk, hit, getHits, getLength };
   };
 
 module.exports = {
-    ship
+    Ship
 };
