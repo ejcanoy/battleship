@@ -62,45 +62,45 @@ describe("GameBoard tests", () => {
 
     test("recived attack and its a hit", () => {
         expect(testGameBoard.placeShip(0,0, testCarrier, "X")).toBe(true);
-        expect(testGameBoard.recieveAttack(0, 0)).toBe("Hit!");
+        expect(testGameBoard.receiveAttack(0, 0)).toBe("Hit!");
         expect(testCarrier.getHits()).toBe(1);
     })
 
     test("recieved attack and its a miss", () => {
         expect(testGameBoard.placeShip(0,0, testCarrier, "X")).toBe(true);
-        expect(testGameBoard.recieveAttack(0, 6)).toBe("Miss!");
+        expect(testGameBoard.receiveAttack(0, 6)).toBe("Miss!");
     })
 
     test("are all ships sunk", () => {
         expect(testGameBoard.placeShip(0,0, testDestroyer, "X")).toBe(true);
-        expect(testGameBoard.recieveAttack(0,0)).toBe("Hit!");
-        expect(testGameBoard.recieveAttack(0,1)).toBe("Hit!");
+        expect(testGameBoard.receiveAttack(0,0)).toBe("Hit!");
+        expect(testGameBoard.receiveAttack(0,1)).toBe("Hit!");
         expect(testGameBoard.areAllShipsSunk()).toBe(true);
     })
 
     test("all ships are sunk 2 ships", () => {
         expect(testGameBoard.placeShip(0,0, testDestroyer, "X")).toBe(true);
         expect(testGameBoard.placeShip(1,0, testSubmarine, "Y")).toBe(true);
-        expect(testGameBoard.recieveAttack(0,0)).toBe("Hit!");
-        expect(testGameBoard.recieveAttack(0,1)).toBe("Hit!");
-        expect(testGameBoard.recieveAttack(1,0)).toBe("Hit!");
-        expect(testGameBoard.recieveAttack(2,0)).toBe("Hit!");
-        expect(testGameBoard.recieveAttack(3,0)).toBe("Hit!");
+        expect(testGameBoard.receiveAttack(0,0)).toBe("Hit!");
+        expect(testGameBoard.receiveAttack(0,1)).toBe("Hit!");
+        expect(testGameBoard.receiveAttack(1,0)).toBe("Hit!");
+        expect(testGameBoard.receiveAttack(2,0)).toBe("Hit!");
+        expect(testGameBoard.receiveAttack(3,0)).toBe("Hit!");
         expect(testGameBoard.areAllShipsSunk()).toBe(true);
     })
 
     test("all ships aren't sunk 1 ship", () => {
         expect(testGameBoard.placeShip(0,0, testDestroyer, "X")).toBe(true);
-        expect(testGameBoard.recieveAttack(0,0)).toBe("Hit!");
-        expect(testGameBoard.recieveAttack(0,2)).toBe("Miss!");
+        expect(testGameBoard.receiveAttack(0,0)).toBe("Hit!");
+        expect(testGameBoard.receiveAttack(0,2)).toBe("Miss!");
         expect(testGameBoard.areAllShipsSunk()).toBe(false);
     })
 
     test("all ships aren't sunk 2 ships", () => {
         expect(testGameBoard.placeShip(0,0, testDestroyer, "X")).toBe(true);
         expect(testGameBoard.placeShip(1,0, testSubmarine, "Y")).toBe(true);
-        expect(testGameBoard.recieveAttack(0,0)).toBe("Hit!");
-        expect(testGameBoard.recieveAttack(0,1)).toBe("Hit!");
+        expect(testGameBoard.receiveAttack(0,0)).toBe("Hit!");
+        expect(testGameBoard.receiveAttack(0,1)).toBe("Hit!");
         expect(testGameBoard.areAllShipsSunk()).toBe(false);
     })
 });

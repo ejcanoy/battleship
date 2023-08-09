@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 // variables
 // board 10x10
 // stores ships in an object
@@ -23,7 +24,7 @@ const GameBoard = () => {
 
     const getBoard = () => _board;
 
-    const recieveAttack = (y, x) => {
+    const receiveAttack = (y, x) => {
         _board[y][x].hit = true;
         if ( _board[y][x].ship) {
             _board[y][x].ship.hit();
@@ -80,7 +81,7 @@ const GameBoard = () => {
         return true;
     }
 
-    return { getBoard, getShips, canPlaceShip, placeShip, recieveAttack, areAllShipsSunk };
+    return { getBoard, getShips, canPlaceShip, placeShip, receiveAttack, areAllShipsSunk };
 }
 
 module.exports = {
