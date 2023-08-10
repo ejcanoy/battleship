@@ -5,7 +5,6 @@ const Player = (name) => {
 
     const getName = () => _name;
 
-
     const generateLegalMove = () => {
         let y = -1;
         let x = -1;
