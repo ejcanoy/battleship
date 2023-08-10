@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-row {
+    display: flex;
+}
+
+.grid-cell {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000; /* 2px solid black */
+    color: blue
+}
+
+.grid-cell:hover {
+    border: 2px solid white; /* 2px solid black */
+}
+
+.grid-container {
+    margin-top: 50px;
+}
+
+.player-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-ship-container {
+    margin-top: 35px;
+}
+
+.ship-container {
+    display: flex;
+    justify-content: center;
+}
+
+.ship {
+    display: flex;
+    width: 150px
+}
+
+.destr
+
+.patrol-ship {
+    width: 75px;
+}
