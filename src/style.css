@@ -3,12 +3,18 @@
     padding: 0;
 }
 
-main {
+.game-container {
     display: flex;
     justify-content: space-around;
 }
 
 header {
+    display: flex;
+    justify-content: center;
+}
+
+.turn-container {
+    margin-top: 25px;
     display: flex;
     justify-content: center;
 }
@@ -24,8 +30,25 @@ header {
     color: blue
 }
 
-.grid-cell:hover {
+#ai-board > .grid-row > .grid-cell:hover {
     border: 2px solid white; /* 2px solid black */
+}
+
+.ship-there {
+    background-color: lightgreen;
+}
+
+.hit {
+    background-color: grey;
+}
+
+#ai-board .ship-there {
+    background-color: white;
+}
+
+#ai-board .hit.ship-there,
+.hit.ship-there {
+    background-color: red;
 }
 
 .grid-container {
@@ -38,7 +61,7 @@ header {
 }
 
 .all-ship-container {
-    margin-top: 35px;
+    margin-top: 70px;
 }
 
 .ship-container {
@@ -48,11 +71,105 @@ header {
 
 .ship {
     display: flex;
-    width: 150px
+    width: 150px;
 }
 
-.destr
+.ship.sunk {
+    filter: invert(25%) sepia(95%) saturate(6179%) hue-rotate(355deg) brightness(95%) contrast(121%);
+}
 
-.patrol-ship {
+.destroyer {
     width: 75px;
 }
+
+.destroyer.sunk {
+    filter: invert(25%) sepia(95%) saturate(6179%) hue-rotate(355deg) brightness(95%) contrast(121%);
+}
+
+.cruiser {
+    width: 100px;
+}
+
+.ship-description {
+    display: none;
+    position: relative;
+}
+
+.ship:hover + .ship-description,
+.destroyer:hover + .ship-description {
+    display: block;
+    color: red;
+}
+
+/* The Modal (background) */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 50%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #modal-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  #place-ships-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Add some spacing from the above content if needed */
+  }
+  
+  .ship-types {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+  }
+
+  .ship-types-content {
+    margin-bottom: 25px;
+  }
+  .button-container button {
+    /* Additional styling for the button */
+  }
+
+
+  

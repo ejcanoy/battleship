@@ -1,14 +1,4 @@
 /* eslint-disable no-underscore-dangle */
-// variables
-// board 10x10
-// stores ships in an object
-// carrier 5 
-// battleship 4
-// cruiser 3
-// submarine 3
-// destroyer 2
-
-const { Ship } = require("./Ship");
 
 const GameBoard = () => {
     const START_BORDER = 0;
@@ -23,6 +13,16 @@ const GameBoard = () => {
     const _ships = [];
 
     const getBoard = () => _board;
+
+    const getShipsSunk = () => {
+        let count = 0;
+        for (let i = 0; i < _ships.length; i++) {
+            if (_ships[i].isSunk()) {
+                count += 1;
+            }
+        }
+        return count;
+    }
 
     const receiveAttack = (y, x) => {
         _board[y][x].hit = true;
@@ -81,9 +81,7 @@ const GameBoard = () => {
         return true;
     }
 
-    return { getBoard, getShips, canPlaceShip, placeShip, receiveAttack, areAllShipsSunk };
+    return { getBoard, getShips, canPlaceShip, placeShip, receiveAttack, areAllShipsSunk, getShipsSunk };
 }
 
-module.exports = {
-    GameBoard
-}
+export default GameBoard;

@@ -1,29 +1,35 @@
-import { Ship } from "../Ship"
+import Ship from "../Ship"
 
-test("Get ship length", () => {
-    expect(Ship(1).getLength()).toBe(1);
+describe("Ship tests", () => {
+    let testBoat;
+    
+    beforeEach(() => {
+        testBoat = Ship(1, "Test");
+    })
+
+    test("Get ship length", () => {
+        expect(testBoat.getLength()).toBe(1);
+    })
+    
+    test("Get # hits", () => {
+        expect(testBoat.getHits()).toStrictEqual(0);
+    })
+    
+    test("Hit and correct # of hits", () => {
+        testBoat.hit();
+        expect(testBoat.getHits()).toStrictEqual(1);
+    })
+    
+    test("# of hits < length and ship isn't sunk", () => {
+        expect(testBoat.isSunk()).toBe(false);
+    })
+    
+    test("ship is sunk", () => {
+        testBoat.hit();
+        expect(testBoat.isSunk()).toBe(true);
+    })
 })
 
-test("Get # hits", () => {
-    expect(Ship(1).getHits()).toStrictEqual(0);
-})
-
-test("Hit and correct # of hits", () => {
-    const curShip = Ship(1);
-    curShip.hit();
-    expect(curShip.getHits()).toStrictEqual(1);
-})
-
-test("# of hits < length and ship isn't sunk", () => {
-    const curShip = Ship(1);
-    expect(curShip.isSunk()).toBe(false);
-})
-
-test("ship is sunk", () => {
-    const curShip = Ship(1);
-    curShip.hit();
-    expect(curShip.isSunk()).toBe(true);
-})
 
 
 

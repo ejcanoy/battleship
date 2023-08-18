@@ -1,6 +1,6 @@
 
-import { GameBoard } from "../GameBoard"
-import { Ship } from "../Ship";
+import GameBoard from "../GameBoard"
+import Ship from "../Ship";
 
     
 
@@ -20,10 +20,6 @@ describe("GameBoard tests", () => {
         testSubmarine = Ship(3);
         testDestroyer = Ship(2);
     });
-
-    // test("board is initialized", () => {
-    //     expect(testGameBoard.getBoard()).toStrictEqual(Array(10).fill(Array(10).fill({"ship" : null, "hit" : false})));
-    // });
 
     test("place ship x axis", () => {
         expect(testGameBoard.placeShip(0,0, testCarrier, "X")).toBe(true);

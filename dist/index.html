@@ -8,273 +8,491 @@
 
 <body>
 
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div id="modal-content" class="modal-content">
+      <div id="modal-title">
+        <h2>Place Ships!</h2>
+      </div>
+      <div class="button-container">
+        <button id="axis-button">X axis</button>
+      </div>
+      <div id="place-ships-container">
+        <div id="user-board" class="grid-container">
+          <div class="grid-row">
+            <div id="grid-0-0" class="grid-cell"></div>
+            <div id="grid-0-1" class="grid-cell"></div>
+            <div id="grid-0-2" class="grid-cell"></div>
+            <div id="grid-0-3" class="grid-cell"></div>
+            <div id="grid-0-4" class="grid-cell"></div>
+            <div id="grid-0-5" class="grid-cell"></div>
+            <div id="grid-0-6" class="grid-cell"></div>
+            <div id="grid-0-7" class="grid-cell"></div>
+            <div id="grid-0-8" class="grid-cell"></div>
+            <div id="grid-0-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-1-0" class="grid-cell"></div>
+            <div id="grid-1-1" class="grid-cell"></div>
+            <div id="grid-1-2" class="grid-cell"></div>
+            <div id="grid-1-3" class="grid-cell"></div>
+            <div id="grid-1-4" class="grid-cell"></div>
+            <div id="grid-1-5" class="grid-cell"></div>
+            <div id="grid-1-6" class="grid-cell"></div>
+            <div id="grid-1-7" class="grid-cell"></div>
+            <div id="grid-1-8" class="grid-cell"></div>
+            <div id="grid-1-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-2-0" class="grid-cell"></div>
+            <div id="grid-2-1" class="grid-cell"></div>
+            <div id="grid-2-2" class="grid-cell"></div>
+            <div id="grid-2-3" class="grid-cell"></div>
+            <div id="grid-2-4" class="grid-cell"></div>
+            <div id="grid-2-5" class="grid-cell"></div>
+            <div id="grid-2-6" class="grid-cell"></div>
+            <div id="grid-2-7" class="grid-cell"></div>
+            <div id="grid-2-8" class="grid-cell"></div>
+            <div id="grid-2-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-3-0" class="grid-cell"></div>
+            <div id="grid-3-1" class="grid-cell"></div>
+            <div id="grid-3-2" class="grid-cell"></div>
+            <div id="grid-3-3" class="grid-cell"></div>
+            <div id="grid-3-4" class="grid-cell"></div>
+            <div id="grid-3-5" class="grid-cell"></div>
+            <div id="grid-3-6" class="grid-cell"></div>
+            <div id="grid-3-7" class="grid-cell"></div>
+            <div id="grid-3-8" class="grid-cell"></div>
+            <div id="grid-3-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-4-0" class="grid-cell"></div>
+            <div id="grid-4-1" class="grid-cell"></div>
+            <div id="grid-4-2" class="grid-cell"></div>
+            <div id="grid-4-3" class="grid-cell"></div>
+            <div id="grid-4-4" class="grid-cell"></div>
+            <div id="grid-4-5" class="grid-cell"></div>
+            <div id="grid-4-6" class="grid-cell"></div>
+            <div id="grid-4-7" class="grid-cell"></div>
+            <div id="grid-4-8" class="grid-cell"></div>
+            <div id="grid-4-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-5-0" class="grid-cell"></div>
+            <div id="grid-5-1" class="grid-cell"></div>
+            <div id="grid-5-2" class="grid-cell"></div>
+            <div id="grid-5-3" class="grid-cell"></div>
+            <div id="grid-5-4" class="grid-cell"></div>
+            <div id="grid-5-5" class="grid-cell"></div>
+            <div id="grid-5-6" class="grid-cell"></div>
+            <div id="grid-5-7" class="grid-cell"></div>
+            <div id="grid-5-8" class="grid-cell"></div>
+            <div id="grid-5-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-6-0" class="grid-cell"></div>
+            <div id="grid-6-1" class="grid-cell"></div>
+            <div id="grid-6-2" class="grid-cell"></div>
+            <div id="grid-6-3" class="grid-cell"></div>
+            <div id="grid-6-4" class="grid-cell"></div>
+            <div id="grid-6-5" class="grid-cell"></div>
+            <div id="grid-6-6" class="grid-cell"></div>
+            <div id="grid-6-7" class="grid-cell"></div>
+            <div id="grid-6-8" class="grid-cell"></div>
+            <div id="grid-6-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-7-0" class="grid-cell"></div>
+            <div id="grid-7-1" class="grid-cell"></div>
+            <div id="grid-7-2" class="grid-cell"></div>
+            <div id="grid-7-3" class="grid-cell"></div>
+            <div id="grid-7-4" class="grid-cell"></div>
+            <div id="grid-7-5" class="grid-cell"></div>
+            <div id="grid-7-6" class="grid-cell"></div>
+            <div id="grid-7-7" class="grid-cell"></div>
+            <div id="grid-7-8" class="grid-cell"></div>
+            <div id="grid-7-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-8-0" class="grid-cell"></div>
+            <div id="grid-8-1" class="grid-cell"></div>
+            <div id="grid-8-2" class="grid-cell"></div>
+            <div id="grid-8-3" class="grid-cell"></div>
+            <div id="grid-8-4" class="grid-cell"></div>
+            <div id="grid-8-5" class="grid-cell"></div>
+            <div id="grid-8-6" class="grid-cell"></div>
+            <div id="grid-8-7" class="grid-cell"></div>
+            <div id="grid-8-8" class="grid-cell"></div>
+            <div id="grid-8-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-9-0" class="grid-cell"></div>
+            <div id="grid-9-1" class="grid-cell"></div>
+            <div id="grid-9-2" class="grid-cell"></div>
+            <div id="grid-9-3" class="grid-cell"></div>
+            <div id="grid-9-4" class="grid-cell"></div>
+            <div id="grid-9-5" class="grid-cell"></div>
+            <div id="grid-9-6" class="grid-cell"></div>
+            <div id="grid-9-7" class="grid-cell"></div>
+            <div id="grid-9-8" class="grid-cell"></div>
+            <div id="grid-9-9" class="grid-cell"></div>
+          </div>
+        </div>
+        <div class="ship-types">
+          <h2>Ship Type</h2>
+          <div class="ship-types-content"> 
+            <img src="./assets/carrier.svg" alt="" id="ship-img" class="ship">
+            <h3 class="ship-name">Carrier</h3>
+            <h4 class="ship-length">Length: 5</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <header>
     <h1>Battleship</h1>
   </header>
   <main>
-    <div id="user-container" class="player-container">
-      <div class="all-ship-container">
-        <div class="ship-container"><img src="./assets/carrier.svg" alt="" class="carrier ship"></div>
-        <div class="ship-container"><img src="./assets/destroyer.svg" alt="" class="destroyer ship"></div>
-        <div class="ship-container"><img src="./assets/destroyer.svg" alt="" class="cruiser ship"></div>
-        <div class="ship-container"><img src="./assets/submarine.svg" alt="" class="submarine ship"></div>
-        <div class="ship-container"><img src="./assets/patrol.svg" alt="" class="patrol-ship"></div>
-      </div> 
-      <div id="user-board" class="grid-container">
-        <div class="grid-row">
-          <div id="grid-1-0-0" class="grid-cell"></div>
-          <div id="grid-1-0-1" class="grid-cell"></div>
-          <div id="grid-1-0-2" class="grid-cell"></div>
-          <div id="grid-1-0-3" class="grid-cell"></div>
-          <div id="grid-1-0-4" class="grid-cell"></div>
-          <div id="grid-1-0-5" class="grid-cell"></div>
-          <div id="grid-1-0-6" class="grid-cell"></div>
-          <div id="grid-1-0-7" class="grid-cell"></div>
-          <div id="grid-1-0-8" class="grid-cell"></div>
-          <div id="grid-1-0-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-1-1-0" class="grid-cell"></div>
-          <div id="grid-1-1-1" class="grid-cell"></div>
-          <div id="grid-1-1-2" class="grid-cell"></div>
-          <div id="grid-1-1-3" class="grid-cell"></div>
-          <div id="grid-1-1-4" class="grid-cell"></div>
-          <div id="grid-1-1-5" class="grid-cell"></div>
-          <div id="grid-1-1-6" class="grid-cell"></div>
-          <div id="grid-1-1-7" class="grid-cell"></div>
-          <div id="grid-1-1-8" class="grid-cell"></div>
-          <div id="grid-1-1-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-1-2-0" class="grid-cell"></div>
-          <div id="grid-1-2-1" class="grid-cell"></div>
-          <div id="grid-1-2-2" class="grid-cell"></div>
-          <div id="grid-1-2-3" class="grid-cell"></div>
-          <div id="grid-1-2-4" class="grid-cell"></div>
-          <div id="grid-1-2-5" class="grid-cell"></div>
-          <div id="grid-1-2-6" class="grid-cell"></div>
-          <div id="grid-1-2-7" class="grid-cell"></div>
-          <div id="grid-1-2-8" class="grid-cell"></div>
-          <div id="grid-1-2-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-1-3-0" class="grid-cell"></div>
-          <div id="grid-1-3-1" class="grid-cell"></div>
-          <div id="grid-1-3-2" class="grid-cell"></div>
-          <div id="grid-1-3-3" class="grid-cell"></div>
-          <div id="grid-1-3-4" class="grid-cell"></div>
-          <div id="grid-1-3-5" class="grid-cell"></div>
-          <div id="grid-1-3-6" class="grid-cell"></div>
-          <div id="grid-1-3-7" class="grid-cell"></div>
-          <div id="grid-1-3-8" class="grid-cell"></div>
-          <div id="grid-1-3-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-1-4-0" class="grid-cell"></div>
-          <div id="grid-1-4-1" class="grid-cell"></div>
-          <div id="grid-1-4-2" class="grid-cell"></div>
-          <div id="grid-1-4-3" class="grid-cell"></div>
-          <div id="grid-1-4-4" class="grid-cell"></div>
-          <div id="grid-1-4-5" class="grid-cell"></div>
-          <div id="grid-1-4-6" class="grid-cell"></div>
-          <div id="grid-1-4-7" class="grid-cell"></div>
-          <div id="grid-1-4-8" class="grid-cell"></div>
-          <div id="grid-1-4-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-1-5-0" class="grid-cell"></div>
-          <div id="grid-1-5-1" class="grid-cell"></div>
-          <div id="grid-1-5-2" class="grid-cell"></div>
-          <div id="grid-1-5-3" class="grid-cell"></div>
-          <div id="grid-1-5-4" class="grid-cell"></div>
-          <div id="grid-1-5-5" class="grid-cell"></div>
-          <div id="grid-1-5-6" class="grid-cell"></div>
-          <div id="grid-1-5-7" class="grid-cell"></div>
-          <div id="grid-1-5-8" class="grid-cell"></div>
-          <div id="grid-1-5-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-1-6-0" class="grid-cell"></div>
-          <div id="grid-1-6-1" class="grid-cell"></div>
-          <div id="grid-1-6-2" class="grid-cell"></div>
-          <div id="grid-1-6-3" class="grid-cell"></div>
-          <div id="grid-1-6-4" class="grid-cell"></div>
-          <div id="grid-1-6-5" class="grid-cell"></div>
-          <div id="grid-1-6-6" class="grid-cell"></div>
-          <div id="grid-1-6-7" class="grid-cell"></div>
-          <div id="grid-1-6-8" class="grid-cell"></div>
-          <div id="grid-1-6-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-1-7-0" class="grid-cell"></div>
-          <div id="grid-1-7-1" class="grid-cell"></div>
-          <div id="grid-1-7-2" class="grid-cell"></div>
-          <div id="grid-1-7-3" class="grid-cell"></div>
-          <div id="grid-1-7-4" class="grid-cell"></div>
-          <div id="grid-1-7-5" class="grid-cell"></div>
-          <div id="grid-1-7-6" class="grid-cell"></div>
-          <div id="grid-1-7-7" class="grid-cell"></div>
-          <div id="grid-1-7-8" class="grid-cell"></div>
-          <div id="grid-1-7-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-1-8-0" class="grid-cell"></div>
-          <div id="grid-1-8-1" class="grid-cell"></div>
-          <div id="grid-1-8-2" class="grid-cell"></div>
-          <div id="grid-1-8-3" class="grid-cell"></div>
-          <div id="grid-1-8-4" class="grid-cell"></div>
-          <div id="grid-1-8-5" class="grid-cell"></div>
-          <div id="grid-1-8-6" class="grid-cell"></div>
-          <div id="grid-1-8-7" class="grid-cell"></div>
-          <div id="grid-1-8-8" class="grid-cell"></div>
-          <div id="grid-1-8-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-1-9-0" class="grid-cell"></div>
-          <div id="grid-1-9-1" class="grid-cell"></div>
-          <div id="grid-1-9-2" class="grid-cell"></div>
-          <div id="grid-1-9-3" class="grid-cell"></div>
-          <div id="grid-1-9-4" class="grid-cell"></div>
-          <div id="grid-1-9-5" class="grid-cell"></div>
-          <div id="grid-1-9-6" class="grid-cell"></div>
-          <div id="grid-1-9-7" class="grid-cell"></div>
-          <div id="grid-1-9-8" class="grid-cell"></div>
-          <div id="grid-1-9-9" class="grid-cell"></div>
-        </div>
-      </div>
+    <div class="turn-container">
+      <h2 id="turn-text"></h2>
     </div>
+    <div class="game-container">
+      <div id="user-container" class="player-container">
 
-    <div id="ai-container" class="player-container">
-      <div id="ai-board" class="grid-container">
-        <div class="grid-row">
-          <div id="grid-2-0-0" class="grid-cell"></div>
-          <div id="grid-2-0-1" class="grid-cell"></div>
-          <div id="grid-2-0-2" class="grid-cell"></div>
-          <div id="grid-2-0-3" class="grid-cell"></div>
-          <div id="grid-2-0-4" class="grid-cell"></div>
-          <div id="grid-2-0-5" class="grid-cell"></div>
-          <div id="grid-2-0-6" class="grid-cell"></div>
-          <div id="grid-2-0-7" class="grid-cell"></div>
-          <div id="grid-2-0-8" class="grid-cell"></div>
-          <div id="grid-2-0-9" class="grid-cell"></div>
+        <div class="all-ship-container">
+          <div class="ship-container">
+            <div>
+              <img src="./assets/carrier.svg" alt="" id="grid-1-carrier" class="carrier ship">
+              <span class="ship-description">Carrier: 5 spots</span>
+            </div>
+          </div>
+
+          <div class="ship-container">
+            <div>
+              <img src="./assets/destroyer.svg" alt="" id="grid-1-battleship" class="battleship ship">
+              <span class="ship-description">Battleship: 4 spots</span>
+            </div>
+          </div>
+          <div class="ship-container">
+            <div>
+              <img src="./assets/destroyer.svg" alt="" id="grid-1-cruiser" class="cruiser ship">
+              <span class="ship-description">Cruiser: 3 spots</span>
+            </div>
+          </div>
+
+          <div class="ship-container">
+            <div>
+              <img src="./assets/submarine.svg" alt="" id="grid-1-submarine" class="submarine ship">
+              <span class="ship-description">Submarine: 3 spots</span>
+            </div>
+          </div>
+
+          <div class="ship-container">
+            <div>
+              <img src="./assets/patrol.svg" alt="" id="grid-1-destroyer" class="destroyer">
+              <span class="ship-description">Destroyer: 2 spots</span>
+            </div>
+          </div>
+          <span>
+            <h4>Hover ship to see size!</h4>
+          </span>
         </div>
-        <div class="grid-row">
-          <div id="grid-2-1-0" class="grid-cell"></div>
-          <div id="grid-2-1-1" class="grid-cell"></div>
-          <div id="grid-2-1-2" class="grid-cell"></div>
-          <div id="grid-2-1-3" class="grid-cell"></div>
-          <div id="grid-2-1-4" class="grid-cell"></div>
-          <div id="grid-2-1-5" class="grid-cell"></div>
-          <div id="grid-2-1-6" class="grid-cell"></div>
-          <div id="grid-2-1-7" class="grid-cell"></div>
-          <div id="grid-2-1-8" class="grid-cell"></div>
-          <div id="grid-2-1-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-2-2-0" class="grid-cell"></div>
-          <div id="grid-2-2-1" class="grid-cell"></div>
-          <div id="grid-2-2-2" class="grid-cell"></div>
-          <div id="grid-2-2-3" class="grid-cell"></div>
-          <div id="grid-2-2-4" class="grid-cell"></div>
-          <div id="grid-2-2-5" class="grid-cell"></div>
-          <div id="grid-2-2-6" class="grid-cell"></div>
-          <div id="grid-2-2-7" class="grid-cell"></div>
-          <div id="grid-2-2-8" class="grid-cell"></div>
-          <div id="grid-2-2-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-2-3-0" class="grid-cell"></div>
-          <div id="grid-2-3-1" class="grid-cell"></div>
-          <div id="grid-2-3-2" class="grid-cell"></div>
-          <div id="grid-2-3-3" class="grid-cell"></div>
-          <div id="grid-2-3-4" class="grid-cell"></div>
-          <div id="grid-2-3-5" class="grid-cell"></div>
-          <div id="grid-2-3-6" class="grid-cell"></div>
-          <div id="grid-2-3-7" class="grid-cell"></div>
-          <div id="grid-2-3-8" class="grid-cell"></div>
-          <div id="grid-2-3-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-2-4-0" class="grid-cell"></div>
-          <div id="grid-2-4-1" class="grid-cell"></div>
-          <div id="grid-2-4-2" class="grid-cell"></div>
-          <div id="grid-2-4-3" class="grid-cell"></div>
-          <div id="grid-2-4-4" class="grid-cell"></div>
-          <div id="grid-2-4-5" class="grid-cell"></div>
-          <div id="grid-2-4-6" class="grid-cell"></div>
-          <div id="grid-2-4-7" class="grid-cell"></div>
-          <div id="grid-2-4-8" class="grid-cell"></div>
-          <div id="grid-2-4-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-2-5-0" class="grid-cell"></div>
-          <div id="grid-2-5-1" class="grid-cell"></div>
-          <div id="grid-2-5-2" class="grid-cell"></div>
-          <div id="grid-2-5-3" class="grid-cell"></div>
-          <div id="grid-2-5-4" class="grid-cell"></div>
-          <div id="grid-2-5-5" class="grid-cell"></div>
-          <div id="grid-2-5-6" class="grid-cell"></div>
-          <div id="grid-2-5-7" class="grid-cell"></div>
-          <div id="grid-2-5-8" class="grid-cell"></div>
-          <div id="grid-2-5-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-2-6-0" class="grid-cell"></div>
-          <div id="grid-2-6-1" class="grid-cell"></div>
-          <div id="grid-2-6-2" class="grid-cell"></div>
-          <div id="grid-2-6-3" class="grid-cell"></div>
-          <div id="grid-2-6-4" class="grid-cell"></div>
-          <div id="grid-2-6-5" class="grid-cell"></div>
-          <div id="grid-2-6-6" class="grid-cell"></div>
-          <div id="grid-2-6-7" class="grid-cell"></div>
-          <div id="grid-2-6-8" class="grid-cell"></div>
-          <div id="grid-2-6-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-2-7-0" class="grid-cell"></div>
-          <div id="grid-2-7-1" class="grid-cell"></div>
-          <div id="grid-2-7-2" class="grid-cell"></div>
-          <div id="grid-2-7-3" class="grid-cell"></div>
-          <div id="grid-2-7-4" class="grid-cell"></div>
-          <div id="grid-2-7-5" class="grid-cell"></div>
-          <div id="grid-2-7-6" class="grid-cell"></div>
-          <div id="grid-2-7-7" class="grid-cell"></div>
-          <div id="grid-2-7-8" class="grid-cell"></div>
-          <div id="grid-2-7-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-2-8-0" class="grid-cell"></div>
-          <div id="grid-2-8-1" class="grid-cell"></div>
-          <div id="grid-2-8-2" class="grid-cell"></div>
-          <div id="grid-2-8-3" class="grid-cell"></div>
-          <div id="grid-2-8-4" class="grid-cell"></div>
-          <div id="grid-2-8-5" class="grid-cell"></div>
-          <div id="grid-2-8-6" class="grid-cell"></div>
-          <div id="grid-2-8-7" class="grid-cell"></div>
-          <div id="grid-2-8-8" class="grid-cell"></div>
-          <div id="grid-2-8-9" class="grid-cell"></div>
-        </div>
-        <div class="grid-row">
-          <div id="grid-2-9-0" class="grid-cell"></div>
-          <div id="grid-2-9-1" class="grid-cell"></div>
-          <div id="grid-2-9-2" class="grid-cell"></div>
-          <div id="grid-2-9-3" class="grid-cell"></div>
-          <div id="grid-2-9-4" class="grid-cell"></div>
-          <div id="grid-2-9-5" class="grid-cell"></div>
-          <div id="grid-2-9-6" class="grid-cell"></div>
-          <div id="grid-2-9-7" class="grid-cell"></div>
-          <div id="grid-2-9-8" class="grid-cell"></div>
-          <div id="grid-2-9-9" class="grid-cell"></div>
+        <div id="user-board" class="grid-container">
+          <div class="player-title">
+            <h2>Player Board</h2>
+          </div>
+          <div class="grid-row">
+            <div id="grid-1-0-0" class="grid-cell"></div>
+            <div id="grid-1-0-1" class="grid-cell"></div>
+            <div id="grid-1-0-2" class="grid-cell"></div>
+            <div id="grid-1-0-3" class="grid-cell"></div>
+            <div id="grid-1-0-4" class="grid-cell"></div>
+            <div id="grid-1-0-5" class="grid-cell"></div>
+            <div id="grid-1-0-6" class="grid-cell"></div>
+            <div id="grid-1-0-7" class="grid-cell"></div>
+            <div id="grid-1-0-8" class="grid-cell"></div>
+            <div id="grid-1-0-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-1-1-0" class="grid-cell"></div>
+            <div id="grid-1-1-1" class="grid-cell"></div>
+            <div id="grid-1-1-2" class="grid-cell"></div>
+            <div id="grid-1-1-3" class="grid-cell"></div>
+            <div id="grid-1-1-4" class="grid-cell"></div>
+            <div id="grid-1-1-5" class="grid-cell"></div>
+            <div id="grid-1-1-6" class="grid-cell"></div>
+            <div id="grid-1-1-7" class="grid-cell"></div>
+            <div id="grid-1-1-8" class="grid-cell"></div>
+            <div id="grid-1-1-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-1-2-0" class="grid-cell"></div>
+            <div id="grid-1-2-1" class="grid-cell"></div>
+            <div id="grid-1-2-2" class="grid-cell"></div>
+            <div id="grid-1-2-3" class="grid-cell"></div>
+            <div id="grid-1-2-4" class="grid-cell"></div>
+            <div id="grid-1-2-5" class="grid-cell"></div>
+            <div id="grid-1-2-6" class="grid-cell"></div>
+            <div id="grid-1-2-7" class="grid-cell"></div>
+            <div id="grid-1-2-8" class="grid-cell"></div>
+            <div id="grid-1-2-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-1-3-0" class="grid-cell"></div>
+            <div id="grid-1-3-1" class="grid-cell"></div>
+            <div id="grid-1-3-2" class="grid-cell"></div>
+            <div id="grid-1-3-3" class="grid-cell"></div>
+            <div id="grid-1-3-4" class="grid-cell"></div>
+            <div id="grid-1-3-5" class="grid-cell"></div>
+            <div id="grid-1-3-6" class="grid-cell"></div>
+            <div id="grid-1-3-7" class="grid-cell"></div>
+            <div id="grid-1-3-8" class="grid-cell"></div>
+            <div id="grid-1-3-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-1-4-0" class="grid-cell"></div>
+            <div id="grid-1-4-1" class="grid-cell"></div>
+            <div id="grid-1-4-2" class="grid-cell"></div>
+            <div id="grid-1-4-3" class="grid-cell"></div>
+            <div id="grid-1-4-4" class="grid-cell"></div>
+            <div id="grid-1-4-5" class="grid-cell"></div>
+            <div id="grid-1-4-6" class="grid-cell"></div>
+            <div id="grid-1-4-7" class="grid-cell"></div>
+            <div id="grid-1-4-8" class="grid-cell"></div>
+            <div id="grid-1-4-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-1-5-0" class="grid-cell"></div>
+            <div id="grid-1-5-1" class="grid-cell"></div>
+            <div id="grid-1-5-2" class="grid-cell"></div>
+            <div id="grid-1-5-3" class="grid-cell"></div>
+            <div id="grid-1-5-4" class="grid-cell"></div>
+            <div id="grid-1-5-5" class="grid-cell"></div>
+            <div id="grid-1-5-6" class="grid-cell"></div>
+            <div id="grid-1-5-7" class="grid-cell"></div>
+            <div id="grid-1-5-8" class="grid-cell"></div>
+            <div id="grid-1-5-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-1-6-0" class="grid-cell"></div>
+            <div id="grid-1-6-1" class="grid-cell"></div>
+            <div id="grid-1-6-2" class="grid-cell"></div>
+            <div id="grid-1-6-3" class="grid-cell"></div>
+            <div id="grid-1-6-4" class="grid-cell"></div>
+            <div id="grid-1-6-5" class="grid-cell"></div>
+            <div id="grid-1-6-6" class="grid-cell"></div>
+            <div id="grid-1-6-7" class="grid-cell"></div>
+            <div id="grid-1-6-8" class="grid-cell"></div>
+            <div id="grid-1-6-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-1-7-0" class="grid-cell"></div>
+            <div id="grid-1-7-1" class="grid-cell"></div>
+            <div id="grid-1-7-2" class="grid-cell"></div>
+            <div id="grid-1-7-3" class="grid-cell"></div>
+            <div id="grid-1-7-4" class="grid-cell"></div>
+            <div id="grid-1-7-5" class="grid-cell"></div>
+            <div id="grid-1-7-6" class="grid-cell"></div>
+            <div id="grid-1-7-7" class="grid-cell"></div>
+            <div id="grid-1-7-8" class="grid-cell"></div>
+            <div id="grid-1-7-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-1-8-0" class="grid-cell"></div>
+            <div id="grid-1-8-1" class="grid-cell"></div>
+            <div id="grid-1-8-2" class="grid-cell"></div>
+            <div id="grid-1-8-3" class="grid-cell"></div>
+            <div id="grid-1-8-4" class="grid-cell"></div>
+            <div id="grid-1-8-5" class="grid-cell"></div>
+            <div id="grid-1-8-6" class="grid-cell"></div>
+            <div id="grid-1-8-7" class="grid-cell"></div>
+            <div id="grid-1-8-8" class="grid-cell"></div>
+            <div id="grid-1-8-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-1-9-0" class="grid-cell"></div>
+            <div id="grid-1-9-1" class="grid-cell"></div>
+            <div id="grid-1-9-2" class="grid-cell"></div>
+            <div id="grid-1-9-3" class="grid-cell"></div>
+            <div id="grid-1-9-4" class="grid-cell"></div>
+            <div id="grid-1-9-5" class="grid-cell"></div>
+            <div id="grid-1-9-6" class="grid-cell"></div>
+            <div id="grid-1-9-7" class="grid-cell"></div>
+            <div id="grid-1-9-8" class="grid-cell"></div>
+            <div id="grid-1-9-9" class="grid-cell"></div>
+          </div>
         </div>
       </div>
-      <div class="all-ship-container">
-        <div class="ship-container"><img src="./assets/carrier.svg" alt="" class="carrier ship"></div>
-        <div class="ship-container"><img src="./assets/destroyer.svg" alt="" class="destroyer ship"></div>
-        <div class="ship-container"><img src="./assets/destroyer.svg" alt="" class="cruiser ship"></div>
-        <div class="ship-container"><img src="./assets/submarine.svg" alt="" class="submarine ship"></div>
-        <div class="ship-container"><img src="./assets/patrol.svg" alt="" class="patrol-ship"></div>
-      </div> 
-    </div>
+      <div id="ai-container" class="player-container">
+        <div id="ai-board" class="grid-container">
+          <div class="player-title">
+            <h2>AI Board</h2>
+          </div>
+          <div class="grid-row">
+            <div id="grid-2-0-0" class="grid-cell"></div>
+            <div id="grid-2-0-1" class="grid-cell"></div>
+            <div id="grid-2-0-2" class="grid-cell"></div>
+            <div id="grid-2-0-3" class="grid-cell"></div>
+            <div id="grid-2-0-4" class="grid-cell"></div>
+            <div id="grid-2-0-5" class="grid-cell"></div>
+            <div id="grid-2-0-6" class="grid-cell"></div>
+            <div id="grid-2-0-7" class="grid-cell"></div>
+            <div id="grid-2-0-8" class="grid-cell"></div>
+            <div id="grid-2-0-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-2-1-0" class="grid-cell"></div>
+            <div id="grid-2-1-1" class="grid-cell"></div>
+            <div id="grid-2-1-2" class="grid-cell"></div>
+            <div id="grid-2-1-3" class="grid-cell"></div>
+            <div id="grid-2-1-4" class="grid-cell"></div>
+            <div id="grid-2-1-5" class="grid-cell"></div>
+            <div id="grid-2-1-6" class="grid-cell"></div>
+            <div id="grid-2-1-7" class="grid-cell"></div>
+            <div id="grid-2-1-8" class="grid-cell"></div>
+            <div id="grid-2-1-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-2-2-0" class="grid-cell"></div>
+            <div id="grid-2-2-1" class="grid-cell"></div>
+            <div id="grid-2-2-2" class="grid-cell"></div>
+            <div id="grid-2-2-3" class="grid-cell"></div>
+            <div id="grid-2-2-4" class="grid-cell"></div>
+            <div id="grid-2-2-5" class="grid-cell"></div>
+            <div id="grid-2-2-6" class="grid-cell"></div>
+            <div id="grid-2-2-7" class="grid-cell"></div>
+            <div id="grid-2-2-8" class="grid-cell"></div>
+            <div id="grid-2-2-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-2-3-0" class="grid-cell"></div>
+            <div id="grid-2-3-1" class="grid-cell"></div>
+            <div id="grid-2-3-2" class="grid-cell"></div>
+            <div id="grid-2-3-3" class="grid-cell"></div>
+            <div id="grid-2-3-4" class="grid-cell"></div>
+            <div id="grid-2-3-5" class="grid-cell"></div>
+            <div id="grid-2-3-6" class="grid-cell"></div>
+            <div id="grid-2-3-7" class="grid-cell"></div>
+            <div id="grid-2-3-8" class="grid-cell"></div>
+            <div id="grid-2-3-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-2-4-0" class="grid-cell"></div>
+            <div id="grid-2-4-1" class="grid-cell"></div>
+            <div id="grid-2-4-2" class="grid-cell"></div>
+            <div id="grid-2-4-3" class="grid-cell"></div>
+            <div id="grid-2-4-4" class="grid-cell"></div>
+            <div id="grid-2-4-5" class="grid-cell"></div>
+            <div id="grid-2-4-6" class="grid-cell"></div>
+            <div id="grid-2-4-7" class="grid-cell"></div>
+            <div id="grid-2-4-8" class="grid-cell"></div>
+            <div id="grid-2-4-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-2-5-0" class="grid-cell"></div>
+            <div id="grid-2-5-1" class="grid-cell"></div>
+            <div id="grid-2-5-2" class="grid-cell"></div>
+            <div id="grid-2-5-3" class="grid-cell"></div>
+            <div id="grid-2-5-4" class="grid-cell"></div>
+            <div id="grid-2-5-5" class="grid-cell"></div>
+            <div id="grid-2-5-6" class="grid-cell"></div>
+            <div id="grid-2-5-7" class="grid-cell"></div>
+            <div id="grid-2-5-8" class="grid-cell"></div>
+            <div id="grid-2-5-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-2-6-0" class="grid-cell"></div>
+            <div id="grid-2-6-1" class="grid-cell"></div>
+            <div id="grid-2-6-2" class="grid-cell"></div>
+            <div id="grid-2-6-3" class="grid-cell"></div>
+            <div id="grid-2-6-4" class="grid-cell"></div>
+            <div id="grid-2-6-5" class="grid-cell"></div>
+            <div id="grid-2-6-6" class="grid-cell"></div>
+            <div id="grid-2-6-7" class="grid-cell"></div>
+            <div id="grid-2-6-8" class="grid-cell"></div>
+            <div id="grid-2-6-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-2-7-0" class="grid-cell"></div>
+            <div id="grid-2-7-1" class="grid-cell"></div>
+            <div id="grid-2-7-2" class="grid-cell"></div>
+            <div id="grid-2-7-3" class="grid-cell"></div>
+            <div id="grid-2-7-4" class="grid-cell"></div>
+            <div id="grid-2-7-5" class="grid-cell"></div>
+            <div id="grid-2-7-6" class="grid-cell"></div>
+            <div id="grid-2-7-7" class="grid-cell"></div>
+            <div id="grid-2-7-8" class="grid-cell"></div>
+            <div id="grid-2-7-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-2-8-0" class="grid-cell"></div>
+            <div id="grid-2-8-1" class="grid-cell"></div>
+            <div id="grid-2-8-2" class="grid-cell"></div>
+            <div id="grid-2-8-3" class="grid-cell"></div>
+            <div id="grid-2-8-4" class="grid-cell"></div>
+            <div id="grid-2-8-5" class="grid-cell"></div>
+            <div id="grid-2-8-6" class="grid-cell"></div>
+            <div id="grid-2-8-7" class="grid-cell"></div>
+            <div id="grid-2-8-8" class="grid-cell"></div>
+            <div id="grid-2-8-9" class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div id="grid-2-9-0" class="grid-cell"></div>
+            <div id="grid-2-9-1" class="grid-cell"></div>
+            <div id="grid-2-9-2" class="grid-cell"></div>
+            <div id="grid-2-9-3" class="grid-cell"></div>
+            <div id="grid-2-9-4" class="grid-cell"></div>
+            <div id="grid-2-9-5" class="grid-cell"></div>
+            <div id="grid-2-9-6" class="grid-cell"></div>
+            <div id="grid-2-9-7" class="grid-cell"></div>
+            <div id="grid-2-9-8" class="grid-cell"></div>
+            <div id="grid-2-9-9" class="grid-cell"></div>
+          </div>
+        </div>
+
+        <div class="all-ship-container">
+          <div class="ship-container">
+            <div>
+              <img src="./assets/carrier.svg" alt="" id="grid-2-carrier" class="carrier ship">
+              <span class="ship-description">Carrier: 5 spots</span>
+            </div>
+          </div>
+          <div class="ship-container">
+            <div>
+              <img src="./assets/destroyer.svg" alt="" id="grid-2-battleship" class="battleship ship">
+              <span class="ship-description">Battleship: 4 spots</span>
+            </div>
+          </div>
+          <div class="ship-container">
+            <div>
+              <img src="./assets/destroyer.svg" alt="" id="grid-2-cruiser" class="cruiser ship">
+              <span class="ship-description">Cruiser: 3 spots</span>
+            </div>
+          </div>
+
+          <div class="ship-container">
+            <div>
+              <img src="./assets/submarine.svg" alt="" id="grid-2-submarine" class="submarine ship">
+              <span class="ship-description">Submarine: 3 spots</span>
+            </div>
+          </div>
+
+          <div class="ship-container">
+            <div>
+              <img src="./assets/patrol.svg" alt="" id="grid-2-destroyer" class="destroyer ship">
+              <span class="ship-description">Destroyer: 2 spots</span>
+            </div>
+          </div>
+          <span>
+            <h4>Hover ship to see size!</h4>
+          </span>
+
+        </div>
+      </div>
   </main>
   <script src="main.js"></script>
 </body>

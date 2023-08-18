@@ -16,6 +16,4 @@ const Ship = (length) => {
     return { isSunk, hit, getHits, getLength };
   };
 
-module.exports = {
-    Ship
-};
+export default Ship;
