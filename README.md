@@ -1,4 +1,3 @@
 # Battleship
 
-This code conducts a game of battleship. Allowing you to play against an AI
-with different levels of difficulty.
+This code conducts a game of battleship and allows you to face off against AI.
