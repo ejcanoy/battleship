@@ -27,8 +27,9 @@ const BattleshipGame = (() => {
         for (let i = 0; i < shipKeys.length; i++) {
             let placed = false;
             const shipName = shipKeys[i];
+            const curShip = Ship(SHIP_TYPES[shipName]);
+            DOM.displayShipToPlace(curShip, shipName);
             while (!placed) {
-                const curShip = Ship(SHIP_TYPES[shipName], shipName);
                 const coordinants = await DOM.getShipCoordinates(curShip, playerBoard); 
                 placed = playerBoard.placeShip(coordinants.yResult, coordinants.xResult, curShip, coordinants.axis);
                 if (!placed) {

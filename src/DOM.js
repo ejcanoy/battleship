@@ -1,4 +1,13 @@
 const DOM = (() => {
+    const SHIP_IMGS = {
+        "Carrier": "../dist/assets/carrier.svg",
+        "Battleship": "../dist/assets/destroyer.svg",
+        "Cruiser": "../dist/assets/destroyer.svg",
+        "Submarine": "../dist/assets/submarine.svg",
+        "Destroyer": "../dist/assets/patrol.svg"
+    }
+
+
     const inializeEventListeners = () => {
         const axisElement = document.querySelector("#axis-button");
 
@@ -9,6 +18,15 @@ const DOM = (() => {
                 axisElement.innerHTML = "X axis";
             }
         });
+    }
+
+    const displayShipToPlace = (curShip, shipName) => {
+        const shipImgElement = document.querySelector("#ship-img");
+        const shipNameElement = document.querySelector(".ship-name");
+        const shipLengthElement = document.querySelector(".ship-length");
+        shipImgElement.src = SHIP_IMGS[shipName];
+        shipNameElement.innerHTML = shipName;
+        shipLengthElement.innerHTML = `Length: ${curShip.getLength()}`;
     }
 
     const hideModal = () => {
@@ -153,7 +171,8 @@ const DOM = (() => {
         displayWinner,
         getShipCoordinates,
         displayShips,
-        hideModal
+        hideModal,
+        displayShipToPlace
     }
 })();
 
