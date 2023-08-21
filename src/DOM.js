@@ -1,10 +1,10 @@
 const DOM = (() => {
     const SHIP_IMGS = {
-        "Carrier": "../dist/assets/carrier.svg",
-        "Battleship": "../dist/assets/destroyer.svg",
-        "Cruiser": "../dist/assets/destroyer.svg",
-        "Submarine": "../dist/assets/submarine.svg",
-        "Destroyer": "../dist/assets/patrol.svg"
+        "Carrier": "/assets/carrier.svg",
+        "Battleship": "/assets/destroyer.svg",
+        "Cruiser": "/assets/destroyer.svg",
+        "Submarine": "/assets/submarine.svg",
+        "Destroyer": "/assets/patrol.svg"
     }
 
 
